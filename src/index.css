@@ -9,15 +9,57 @@
     scroll-behavior: smooth;
   }
 
+  body,
+  body::before,
+  body::after {
+    box-sizing: border-box;
+  }
+
   body {
-    @apply min-h-screen bg-slate-950 font-sans text-slate-100 antialiased;
+    @apply relative min-h-screen bg-slate-950 font-sans text-slate-100 antialiased;
     background-image:
-      radial-gradient(circle at top, rgba(8, 145, 178, 0.16), transparent 34%),
-      linear-gradient(180deg, #020617 0%, #050814 42%, #020617 100%);
+      radial-gradient(circle at top left, rgba(34, 211, 238, 0.16), transparent 32%),
+      radial-gradient(circle at 82% 18%, rgba(139, 92, 246, 0.08), transparent 28%),
+      linear-gradient(180deg, #050816 0%, #070b1a 46%, #050816 100%);
+    background-attachment: scroll;
     font-synthesis: none;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    isolation: isolate;
+  }
+
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    background-image:
+      linear-gradient(rgba(255, 255, 255, 0.015) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255, 255, 255, 0.015) 1px, transparent 1px);
+    background-size: 72px 72px;
+    mask-image: radial-gradient(circle at center, black 30%, transparent 100%);
+    opacity: 0.38;
+    z-index: -2;
+  }
+
+  body::after {
+    content: '';
+    position: fixed;
+    inset: -20%;
+    pointer-events: none;
+    background:
+      radial-gradient(circle at 24% 20%, rgba(34, 211, 238, 0.08), transparent 22%),
+      radial-gradient(circle at 78% 26%, rgba(139, 92, 246, 0.08), transparent 24%),
+      radial-gradient(circle at 50% 85%, rgba(34, 211, 238, 0.04), transparent 28%);
+    filter: blur(24px);
+    z-index: -3;
+  }
+
+  @media (min-width: 768px) {
+    body {
+      background-attachment: fixed;
+    }
   }
 
   #root {
@@ -28,26 +70,59 @@
     background: rgba(34, 211, 238, 0.24);
     color: #ecfeff;
   }
+
+  a:focus-visible,
+  button:focus-visible {
+    outline: 2px solid rgba(34, 211, 238, 0.8);
+    outline-offset: 3px;
+  }
+}
+
+@keyframes drift-slow {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+
+  50% {
+    transform: translate3d(18px, -14px, 0) scale(1.04);
+  }
+}
+
+@keyframes drift-slower {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+
+  50% {
+    transform: translate3d(-16px, 18px, 0) scale(1.03);
+  }
+}
+
+@layer utilities {
+  .orb {
+    animation: drift-slow 22s ease-in-out infinite;
+    will-change: transform;
+  }
+
+  .orb-cyan {
+    animation-duration: 24s;
+  }
+
+  .orb-violet {
+    animation-duration: 28s;
+    animation-name: drift-slower;
+  }
+
+  .orb-blue {
+    animation-duration: 30s;
+    animation-direction: alternate;
+  }
 }
 
 @layer components {
   .app-container {
     @apply mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8;
-  }
-
-  .section-card {
-    @apply rounded-[2rem] border border-slate-800/80 bg-slate-950/70 p-6 shadow-[0_24px_80px_rgba(2,6,23,0.45)] backdrop-blur-sm sm:p-8;
-  }
-
-  .section-label {
-    @apply text-xs font-semibold uppercase tracking-[0.35em] text-cyan-300;
-  }
-
-  .section-title {
-    @apply mt-3 text-2xl font-semibold tracking-tight text-white sm:text-3xl;
-  }
-
-  .section-text {
-    @apply mt-3 max-w-2xl text-sm leading-7 text-slate-400 sm:text-base;
   }
 }

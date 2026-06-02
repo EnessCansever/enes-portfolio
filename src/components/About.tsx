@@ -4,17 +4,22 @@ import { SectionShell } from './SectionShell'
 export function About() {
   return (
     <SectionShell
+      number="01"
       id="about"
       eyebrow="Hakkımda"
-      title="Kısa profil alanı"
-      description="Bu bölüm daha sonra kişisel özet, yaklaşım ve çalışma tarzı ile doldurulabilir."
+      title="Kod, öğretme ve ürün geliştirme arasında"
+      description="Kısa, gerçekçi ve CV’ye uygun bir profil alanı; odağım arayüz kalitesi ve sürdürülebilir yapı."
     >
-      <div className="grid gap-4 md:grid-cols-3">
+      <div className="grid gap-6 lg:grid-cols-[0.78fr_1.22fr] lg:items-start">
+        <p className="max-w-sm text-sm leading-7 text-slate-400 sm:text-base">
+          Frontend tarafında sade ve net arayüzler kurmayı, kullanıcı akışını gereksiz kalabalık olmadan çözmeyi önemsiyorum.
+        </p>
+
         {aboutHighlights.map((item) => (
-          <article key={item.title} className="rounded-3xl border border-slate-800/80 bg-slate-900/60 p-5">
-            <h3 className="text-base font-semibold text-white">{item.title}</h3>
-            <p className="mt-3 text-sm leading-7 text-slate-400">{item.description}</p>
-          </article>
+          <div key={item.title} className="border-t border-slate-800/80 py-4 first:border-t-0 first:pt-0 last:pb-0">
+            <h3 className="text-base font-medium text-white">{item.title}</h3>
+            <p className="mt-2 max-w-xl text-sm leading-7 text-slate-400">{item.description}</p>
+          </div>
         ))}
       </div>
     </SectionShell>

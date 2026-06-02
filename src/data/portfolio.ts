@@ -14,108 +14,136 @@ export const navigationItems: NavigationItem[] = [
   { label: 'Yetenekler', href: '#skills' },
   { label: 'Projeler', href: '#projects' },
   { label: 'Deneyim', href: '#experience' },
-  { label: 'Odak', href: '#focus' },
+  { label: 'Odak Alanlarım', href: '#focus' },
   { label: 'İletişim', href: '#contact' },
 ]
 
 export const heroStats: HeroStat[] = [
-  { value: '1 sayfa', label: 'tek sayfa yapı' },
-  { value: 'React + TS', label: 'temiz bileşen akışı' },
-  { value: 'Tailwind v4', label: 'hızlı arayüz kurulumu' },
+  { value: 'Odak', label: 'React odaklı frontend' },
+  { value: 'Stack', label: 'Node.js ile full-stack gelişim' },
+  { value: 'Ton', label: 'sade ve kullanıcı odaklı arayüzler' },
 ]
 
 export const aboutHighlights: HighlightItem[] = [
   {
-    title: 'Kısa profil alanı',
-    description: 'Bu alan daha sonra kişinin özeti, yaklaşımı ve odak alanları için kullanılabilir.',
+    title: 'Çalışma yaklaşımı',
+    description: 'İşlevi ve okunabilirliği önde tutan, sade ama karakterli arayüzler kurmaya çalışıyorum.',
   },
   {
-    title: 'Düzenli yapı',
-    description: 'Sekmeler, kartlar ve section tabanlı akış gelecek içeriklere kolayca uyarlanır.',
+    title: 'Ürün hissi',
+    description: 'Kısa yolları, net hiyerarşiyi ve iyi boşluk kullanımını seven bir düzen diliyle ilerliyorum.',
   },
   {
-    title: 'Geliştirilebilir iskelet',
-    description: 'İleride veri kaynağı, animasyon ya da backend entegrasyonu eklemek için hazırdır.',
+    title: 'Büyüme alanı',
+    description: 'Bu portfolyo iskeleti; içerik, gerçek projeler ve daha ince etkileşimlerle zamanla genişleyebilir.',
   },
 ]
 
 export const skillGroups: SkillGroup[] = [
   {
     title: 'Frontend',
-    items: ['React', 'TypeScript', 'Tailwind CSS'],
+    items: ['HTML', 'CSS', 'JavaScript', 'TypeScript', 'React', 'Tailwind CSS', 'Bootstrap', 'Responsive Design'],
+  },
+  {
+    title: 'Backend',
+    items: ['Node.js', 'Express.js', 'MongoDB', 'Mongoose', 'REST API', 'JWT Authentication'],
   },
   {
     title: 'Araçlar',
-    items: ['Vite', 'ESLint', 'Component tabanlı yapı'],
+    items: ['Git', 'GitHub', 'Vite', 'Vercel', 'Render', 'Postman / Thunder Client', 'VS Code'],
   },
   {
-    title: 'Yaklaşım',
-    items: ['Temiz mimari', 'Bakımı kolay kod', 'Basit tekrar kullanılabilirlik'],
+    title: 'Geliştirmeye Devam Ettiklerim',
+    items: ['TypeScript', 'Backend mimarisi', 'Authentication akışları', 'API tasarımı', 'SEO temelleri'],
   },
 ]
 
 export const projectItems: ProjectItem[] = [
   {
-    name: 'Proje Kartı 01',
-    description: 'İleride gerçek bir proje özeti için kullanılacak placeholder kart.',
-    stack: ['React', 'Tailwind'],
+    name: 'Fixora',
+    description: 'AI destekli hata analizi ve çözüm önerileri sunan, geliştiriciler için hazırlanmış full-stack web uygulaması.',
+    stack: ['React', 'TypeScript', 'Tailwind CSS'],
+    liveUrl: '#',
+    githubUrl: '#',
+    previewLabel: 'UI / Form akışı',
+    previewText: 'Kısa ve net etkileşimlerle ilerleyen, servis odaklı bir ekran mantığı.',
+    accent: 'cyan',
   },
   {
-    name: 'Proje Kartı 02',
-    description: 'İkinci örnek kart; içerik geldiğinde aynı düzen korunabilir.',
-    stack: ['TypeScript', 'Vite'],
+    name: 'Berber Randevu Yönetim Sistemi',
+    description: 'Müşteri ve berber rolleri için randevu oluşturma, hizmet yönetimi ve onay akışlarını içeren full-stack uygulama.',
+    stack: ['React', 'Node.js', 'MongoDB'],
+    liveUrl: '#',
+    githubUrl: '#',
+    previewLabel: 'Operasyon / Takvim',
+    previewText: 'Günlük kullanımı kolaylaştıran, hızlı karar alınan bir randevu akışı.',
+    accent: 'violet',
   },
   {
-    name: 'Proje Kartı 03',
-    description: 'Kısa açıklama ve etiketler için hazırlanmış üçüncü yer tutucu.',
-    stack: ['UI', 'Layout'],
+    name: 'Node.js Blog Sistemi',
+    description: 'Node.js core modülleriyle geliştirilen, daha sonra Express.js yapısına taşınan temel blog sistemi.',
+    stack: ['Node.js', 'Express.js', 'JWT'],
+    liveUrl: '#',
+    githubUrl: '#',
+    previewLabel: 'API / İçerik',
+    previewText: 'Yazı yönetimi ve kullanıcı akışını birlikte taşıyan sade bir backend kurgusu.',
+    accent: 'blue',
+  },
+  {
+    name: 'React Mini Projeler',
+    description: 'React temellerini pekiştirmek için geliştirilen küçük uygulamalar ve arayüz denemeleri.',
+    stack: ['React', 'Tailwind CSS', 'JavaScript'],
+    liveUrl: '#',
+    githubUrl: '#',
+    previewLabel: 'Deneme / UI',
+    previewText: 'Kısa öğrenme iterasyonlarıyla ilerleyen küçük ve temiz örnekler.',
+    accent: 'cyan',
   },
 ]
 
 export const experienceItems: ExperienceItem[] = [
   {
     period: '2024 - bugün',
-    title: 'Portfolyo iskeleti',
-    description: 'Bu satır, ileride gerçek iş/öğrenim deneyimlerinin eklenmesi için örnek bir alan sunar.',
+    title: 'Digiway Akademi',
+    description: 'HTML, CSS, JavaScript, Bootstrap ve React temelleri üzerine başlangıç seviyesindeki öğrencilere eğitim verdim. Teknik konuları sadeleştirme ve pratik örneklerle anlatma üzerine deneyim kazandım.',
   },
   {
     period: '2023 - 2024',
-    title: 'Bileşen tabanlı geliştirme',
-    description: 'Tekrar kullanılabilir yapı ve sade API tasarımı için hazırlanmış örnek zaman çizelgesi.',
+    title: 'Kişisel Projeler ve Full-Stack Gelişim',
+    description: 'React, Node.js, Express ve MongoDB ile gerçek proje akışlarını deneyerek frontend dışındaki backend tarafını da güçlendirdiğim süreç.',
   },
 ]
 
 export const focusItems: FocusItem[] = [
   {
-    title: 'Net ilk ekran',
-    description: 'İlk bakışta ne sunulduğunu belli eden, sade ve dengeli bir hero bölümü.',
+    title: 'Daha güçlü TypeScript kullanımı',
+    description: 'Tip güvenliğini artıran, bakım maliyetini azaltan daha sağlam component yapıları.',
   },
   {
-    title: 'Okunabilir yapı',
-    description: 'Klasörler, bileşenler ve veri katmanı büyüdükçe dağılmayacak şekilde düzenlendi.',
+    title: 'Backend mimarisi',
+    description: 'Express.js, MongoDB ve kimlik doğrulama akışlarını daha düzenli kurgulamak.',
   },
   {
-    title: 'Genişleyebilir iskelet',
-    description: 'Gerçek içerik, animasyon veya CMS entegrasyonu eklemek için uygun temel.',
+    title: 'SEO ve erişilebilirlik',
+    description: 'Arayüzün sadece şık değil, bulunabilir ve anlaşılır da olmasına özen göstermek.',
   },
 ]
 
 export const contactItems: ContactItem[] = [
   {
     label: 'E-posta',
-    value: 'merhaba@ornek.com',
-    href: 'mailto:merhaba@ornek.com',
+    value: 'enesscansever@hotmail.com',
+    href: 'mailto:enesscansever@hotmail.com',
   },
   {
     label: 'LinkedIn',
-    value: 'Profil bağlantısı',
-    href: 'https://www.linkedin.com',
-    external: true,
+    value: 'LinkedIn profili',
+    href: '#',
   },
   {
     label: 'GitHub',
-    value: 'Kod deposu',
-    href: 'https://github.com',
+    value: 'enesscansever',
+    href: 'https://github.com/enesscansever',
     external: true,
   },
 ]

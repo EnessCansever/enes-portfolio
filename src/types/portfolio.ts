@@ -22,6 +22,11 @@ export type ProjectItem = {
   name: string
   description: string
   stack: string[]
+  liveUrl: string
+  githubUrl: string
+  previewLabel: string
+  previewText: string
+  accent: 'cyan' | 'violet' | 'blue'
 }
 
 export type ExperienceItem = {
