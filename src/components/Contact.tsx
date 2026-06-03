@@ -38,6 +38,7 @@ export function Contact() {
 
           <a
             href="/cv.pdf"
+            download
             className="group mt-6 inline-flex items-center gap-3 text-sm font-medium text-slate-200 transition duration-300 hover:translate-x-0.5 hover:text-cyan-300 focus-visible:text-cyan-300"
           >
             <span>CV indir</span>
