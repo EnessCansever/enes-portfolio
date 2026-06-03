@@ -1,73 +1,74 @@
-# React + TypeScript + Vite
+# Enes Cansever | Frontend Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Kısa Açıklama
+React, TypeScript, Vite ve Tailwind CSS ile geliştirdiğim Türkçe kişisel portfolyo sitesi.
 
-Currently, two official plugins are available:
+## Proje Hakkında
+Bu proje; geliştirdiğim çalışmaları, öne çıkan projelerimi ve iletişim bağlantılarımı tek sayfada sunmak için hazırladığım kişisel portfolyo sitesidir. Koyu tema, responsive yapı, fixed navbar, proje vitrini ve sade içerik akışıyla CV'de kullanılabilecek profesyonel bir görünüm hedefledim.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Özellikler
+- Modern koyu tema
+- Responsive tasarım
+- Fixed navbar
+- Proje vitrini
+- Hover preview etkileşimleri
+- Gerçek proje ve iletişim bağlantıları
+- SEO/meta etiketleri
+- Component tabanlı React yapısı
 
-## React Compiler
+## Kullanılan Teknolojiler
+- React
+- TypeScript
+- Vite
+- Tailwind CSS
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Öne Çıkan Projeler
 
-## Expanding the ESLint configuration
+### 1. Fixora
+AI destekli hata analizi ve çözüm önerileri sunan full-stack web uygulaması.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- Canlı Link: https://getfixora.dev/
+- GitHub: https://github.com/EnessCansever/fixora
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### 2. Berber Randevu Yönetim Sistemi
+Müşteri ve berber rolleri için randevu oluşturma, hizmet yönetimi ve onay akışlarını içeren full-stack uygulama.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+- GitHub: https://github.com/EnessCansever/barber-appointment-management-system
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### 3. Node.js Blog Sistemi
+Node.js core modülleriyle geliştirilen, daha sonra Express.js yapısına taşınan temel blog sistemi.
+
+- GitHub: https://github.com/EnessCansever/basit-blog-sistemi
+
+## Kurulum
+Projeyi yerel ortamda çalıştırmak için aşağıdaki komutları izleyin:
+
+```bash
+npm install
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Geliştirme Sunucusunu Çalıştırma
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm run dev
 ```
+
+## Production Build
+
+```bash
+npm run build
+```
+
+## Lint Kontrolü
+
+```bash
+npm run lint
+```
+
+## İletişim
+- LinkedIn: https://www.linkedin.com/in/enes-cansever-478766244/
+- GitHub: https://github.com/EnessCansever
+- E-posta: enesscansever@hotmail.com
+
+## Not
+Bu portfolyo, yeni projeler ve güncellemelerle zaman içinde geliştirilmeye devam edecektir.
