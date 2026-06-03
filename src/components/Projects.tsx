@@ -82,23 +82,29 @@ export function Projects() {
                   </div>
 
                   <div className="flex flex-wrap items-center gap-3 text-sm">
-                    <a
-                      href={project.liveUrl}
-                      className="text-slate-300 transition duration-300 hover:translate-x-0.5 hover:text-cyan-300 focus-visible:text-cyan-300"
-                      target={project.liveUrl === '#' ? undefined : '_blank'}
-                      rel={project.liveUrl === '#' ? undefined : 'noreferrer'}
-                    >
-                      Canlı Demo
-                    </a>
-                    <span className="text-slate-700">/</span>
-                    <a
-                      href={project.githubUrl}
-                      className="text-slate-300 transition duration-300 hover:translate-x-0.5 hover:text-cyan-300 focus-visible:text-cyan-300"
-                      target={project.githubUrl === '#' ? undefined : '_blank'}
-                      rel={project.githubUrl === '#' ? undefined : 'noreferrer'}
-                    >
-                      GitHub
-                    </a>
+                    {project.liveUrl !== '#' && (
+                      <a
+                        href={project.liveUrl}
+                        className="text-slate-300 transition duration-300 hover:translate-x-0.5 hover:text-cyan-300 focus-visible:text-cyan-300"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        Canlı Demo
+                      </a>
+                    )}
+                    {project.liveUrl !== '#' && project.githubUrl !== '#' && (
+                      <span className="text-slate-700">/</span>
+                    )}
+                    {project.githubUrl !== '#' && (
+                      <a
+                        href={project.githubUrl}
+                        className="text-slate-300 transition duration-300 hover:translate-x-0.5 hover:text-cyan-300 focus-visible:text-cyan-300"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        GitHub
+                      </a>
+                    )}
                   </div>
                 </div>
 
