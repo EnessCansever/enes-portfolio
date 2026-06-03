@@ -24,6 +24,7 @@ export type ProjectItem = {
   stack: string[]
   liveUrl: string
   githubUrl: string
+  images?: string[]
   previewLabel: string
   previewText: string
   accent: 'cyan' | 'violet' | 'blue'
