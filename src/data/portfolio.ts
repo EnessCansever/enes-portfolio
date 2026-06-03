@@ -19,23 +19,23 @@ export const navigationItems: NavigationItem[] = [
 ]
 
 export const heroStats: HeroStat[] = [
-  { value: 'Odak', label: 'React odaklı frontend' },
-  { value: 'Stack', label: 'Node.js ile full-stack gelişim' },
-  { value: 'Ton', label: 'sade ve kullanıcı odaklı arayüzler' },
+  { value: 'Odak', label: 'React ile kullanıcı arayüzleri geliştirme' },
+  { value: 'Backend', label: 'Node.js, Express ve MongoDB ile API geliştirme' },
+  { value: 'Yaklaşım', label: 'Sade, anlaşılır ve sürdürülebilir proje yapısı' },
 ]
 
 export const aboutHighlights: HighlightItem[] = [
   {
-    title: 'Çalışma yaklaşımı',
-    description: 'İşlevi ve okunabilirliği önde tutan, sade ama karakterli arayüzler kurmaya çalışıyorum.',
+    title: 'Eğitmenlik geçmişi',
+    description: 'Frontend temellerini başlangıç seviyesindeki öğrencilere anlatarak teknik konuları sadeleştirme ve anlaşılır örneklerle aktarma pratiği kazandım.',
   },
   {
-    title: 'Ürün hissi',
-    description: 'Kısa yolları, net hiyerarşiyi ve iyi boşluk kullanımını seven bir düzen diliyle ilerliyorum.',
+    title: 'Proje odaklı gelişim',
+    description: 'Fixora, berber randevu sistemi ve Node.js blog sistemi gibi projelerle öğrendiklerimi gerçek uygulama akışlarına dönüştürüyorum.',
   },
   {
-    title: 'Büyüme alanı',
-    description: 'Bu portfolyo iskeleti; içerik, gerçek projeler ve daha ince etkileşimlerle zamanla genişleyebilir.',
+    title: 'Gelişim hedefi',
+    description: 'React, TypeScript, Node.js ve MongoDB tarafında daha sağlam, sürdürülebilir ve canlıya alınabilir projeler geliştirmeye odaklanıyorum.',
   },
 ]
 
@@ -95,12 +95,12 @@ export const projectItems: ProjectItem[] = [
 
 export const experienceItems: ExperienceItem[] = [
   {
-    period: '2024 - bugün',
-    title: 'Digiway Akademi',
-    description: 'HTML, CSS, JavaScript, Bootstrap ve React temelleri üzerine başlangıç seviyesindeki öğrencilere eğitim verdim. Teknik konuları sadeleştirme ve pratik örneklerle anlatma üzerine deneyim kazandım.',
+    period: '2024',
+    title: 'Frontend Developer Eğitmeni — Digiway Akademi',
+    description: 'HTML, CSS, JavaScript, Bootstrap ve React temelleri üzerine başlangıç seviyesindeki öğrencilere eğitim verdim. Teknik konuları sadeleştirme, pratik örneklerle anlatma ve öğrencilerin proje geliştirme sürecine destek olma deneyimi kazandım.',
   },
   {
-    period: '2023 - 2024',
+    period: '2024 - 2026',
     title: 'Kişisel Projeler ve Full-Stack Gelişim',
     description: 'React, Node.js, Express ve MongoDB ile gerçek proje akışlarını deneyerek frontend dışındaki backend tarafını da güçlendirdiğim süreç.',
   },
@@ -108,16 +108,16 @@ export const experienceItems: ExperienceItem[] = [
 
 export const focusItems: FocusItem[] = [
   {
-    title: 'Daha güçlü TypeScript kullanımı',
-    description: 'Tip güvenliğini artıran, bakım maliyetini azaltan daha sağlam component yapıları.',
+    title: 'React ve TypeScript',
+    description: 'Component yapısı, state yönetimi, form akışları ve kullanıcı arayüzü geliştirme pratiğimi güçlendiriyorum.',
   },
   {
-    title: 'Backend mimarisi',
-    description: 'Express.js, MongoDB ve kimlik doğrulama akışlarını daha düzenli kurgulamak.',
+    title: 'Node.js ve Backend',
+    description: 'Express, MongoDB, JWT ve REST API yapılarıyla backend tarafında daha düzenli proje geliştirmeye odaklanıyorum.',
   },
   {
-    title: 'SEO ve erişilebilirlik',
-    description: 'Arayüzün sadece şık değil, bulunabilir ve anlaşılır da olmasına özen göstermek.',
+    title: 'Canlıya alma ve ürün kalitesi',
+    description: 'Vercel, Render, SEO, hata yönetimi ve kullanıcı deneyimi tarafında projelerimi daha üretim seviyesine yaklaştırıyorum.',
   },
 ]
 

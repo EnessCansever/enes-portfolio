@@ -8,7 +8,7 @@ export function Experience() {
       id="experience"
       eyebrow="Deneyim"
       title="Deneyim ve geçmiş"
-      description="İki ana satırla, geçmişimi kısa ve doğru biçimde özetleyen bir zaman çizelgesi."
+      description="Frontend eğitmenliği, kişisel projeler ve full-stack geliştirme sürecimi özetleyen kısa zaman çizelgesi."
     >
       <div className="space-y-2">
         {experienceItems.map((item) => (

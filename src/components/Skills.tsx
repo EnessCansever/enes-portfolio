@@ -8,11 +8,11 @@ export function Skills() {
       id="skills"
       eyebrow="Yetkinlikler"
       title="Kullandığım teknolojiler"
-      description="Kategori bazlı sade bir yapı; odak noktası araç listesi değil, neyi nasıl kullandığım."
+      description="Frontend tarafında React ve TypeScript’i, backend tarafında Node.js ve MongoDB’yi gerçek proje akışları içinde kullanmaya odaklanıyorum."
     >
       <div className="grid gap-6 lg:grid-cols-[0.82fr_1.18fr]">
         <p className="max-w-sm text-sm leading-7 text-slate-400 sm:text-base">
-          Tasarım, component mimarisi ve küçük etkileşimleri birlikte düşünerek ilerlemeyi tercih ediyorum.
+          Arayüz geliştirirken component yapısı, okunabilir kod, responsive tasarım ve kullanıcı akışını birlikte düşünmeye çalışıyorum.
         </p>
 
         <div className="space-y-6">

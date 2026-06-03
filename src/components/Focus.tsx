@@ -8,7 +8,7 @@ export function Focus() {
       id="focus"
       eyebrow="Odak Alanlarım"
       title="Şu anda güçlendirdiğim alanlar"
-      description="Kısa vadede derinleşmek istediğim başlıklar; teknik omurga, okunabilir yapı ve arayüz kalitesi."
+      description="İşe alım sürecine hazırlanırken hem temel frontend bilgisini hem de full-stack proje pratiğini güçlendirmeye odaklanıyorum."
     >
       <div className="space-y-2">
         {focusItems.map((item, index) => (

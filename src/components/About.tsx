@@ -7,8 +7,8 @@ export function About() {
       number="01"
       id="about"
       eyebrow="Hakkımda"
-      title="Kod, öğretme ve ürün geliştirme arasında"
-      description="Kısa, gerçekçi ve CV’ye uygun bir profil alanı; odağım arayüz kalitesi ve sürdürülebilir yapı."
+      title="Frontend eğitmenliğinden full-stack geliştirmeye"
+      description="Frontend eğitmenliği deneyimimle HTML, CSS, JavaScript, Bootstrap ve React temellerini anlattım. Bu süreçte teknik konuları sadeleştirme, örneklerle açıklama ve kullanıcıya dönük düşünme konusunda güçlü bir pratik kazandım."
     >
       <div className="grid gap-6 lg:grid-cols-[0.78fr_1.22fr] lg:items-start">
         <p className="max-w-sm text-sm leading-7 text-slate-400 sm:text-base">

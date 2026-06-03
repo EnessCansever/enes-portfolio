@@ -8,11 +8,11 @@ export function Contact() {
       id="contact"
       eyebrow="İletişim"
       title="Birlikte çalışabiliriz"
-      description="Kısa bir not bırakmak, bir proje konuşmak veya güncel çalışmalarımı görmek için buradayım."
+      description="Frontend, React veya full-stack projeler üzerine konuşmak istersen benimle iletişime geçebilirsin."
     >
       <div className="grid gap-6 lg:grid-cols-[0.8fr_1.2fr] lg:items-start">
         <p className="max-w-sm text-sm leading-7 text-slate-400 sm:text-base">
-          Kısa bir mesaj bırakmak veya bir iş konuşmak istersen, aşağıdaki bağlantılar yeterli.
+          Kısa bir mesaj bırakmak, projelerimi incelemek veya iş fırsatları için iletişime geçmek istersen bağlantılar aşağıda.
         </p>
 
         <div className="space-y-2">
