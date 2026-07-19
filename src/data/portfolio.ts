@@ -61,35 +61,68 @@ export const skillGroups: SkillGroup[] = [
 export const projectItems: ProjectItem[] = [
   {
     name: 'Fixora',
+    category: 'AI / Debugging',
     description: 'AI destekli hata analizi ve çözüm önerileri sunan, geliştiriciler için hazırlanmış full-stack web uygulaması.',
     stack: ['React', 'TypeScript', 'Tailwind CSS', 'Node.js', 'Express', 'MongoDB', 'Gemini API'],
     liveUrl: 'https://getfixora.dev/',
     githubUrl: 'https://github.com/EnessCansever/fixora',
     images: ['/projects/fixora1.png', '/projects/fixora2.png', '/projects/fixora3.png'],
-    previewLabel: 'AI / Debugging',
-    previewText: 'Kod hatalarını daha anlaşılır hale getirmeye, olası nedenleri ve çözüm adımlarını sade bir akışta göstermeye odaklanan ürün projesi.',
-    accent: 'cyan',
+    features: [
+      'Gemini API ile kod hatalarını analiz edip olası nedenleri özetler',
+      'Adım adım çözüm önerileri sunan sade bir debugging akışı',
+      'React + Node.js/Express + MongoDB ile uçtan uca full-stack mimari',
+    ],
+    accent: 'indigo',
+    featured: true,
+  },
+  {
+    name: 'JobFit TR',
+    category: 'Kariyer / İş Eşleştirme',
+    description: 'Junior geliştiriciler için iş ilanı uygunluk analizi ve başvuru takip paneli.',
+    stack: ['React', 'TypeScript', 'Tailwind CSS', 'Vite', 'LocalStorage'],
+    liveUrl: 'https://jobfit-tr.vercel.app',
+    githubUrl: 'https://github.com/EnessCansever/jobfit-tr',
+    images: [
+      '/projects/jobfit-tr-dashboard.png',
+      '/projects/jobfit-tr-saved-applications.png',
+      '/projects/jobfit-tr-analysis-summary.png',
+    ],
+    features: [
+      'İş ilanlarını junior profiline göre uygunluk açısından değerlendirir',
+      'Başvuruları tek panelden takip etmeyi sağlar',
+      'LocalStorage tabanlı, backend gerektirmeyen hafif bir mimari',
+    ],
+    accent: 'violet',
+    featured: true,
   },
   {
     name: 'Berber Randevu Yönetim Sistemi',
+    category: 'Full-Stack / Randevu',
     description: 'Müşteri ve berber rolleri için randevu oluşturma, hizmet yönetimi ve onay akışlarını içeren full-stack uygulama.',
     stack: ['React', 'Tailwind CSS', 'Node.js', 'Express', 'MongoDB', 'Mongoose', 'JWT'],
     liveUrl: '#',
     githubUrl: 'https://github.com/EnessCansever/barber-appointment-management-system',
     images: ['/projects/barber1.png', '/projects/barber2.png', '/projects/barber3.png'],
-    previewLabel: 'Full-Stack / Randevu',
-    previewText: 'Rol bazlı kullanıcı akışı, hizmet yönetimi ve randevu durumlarını yönetmeye odaklanan full-stack proje.',
-    accent: 'violet',
+    features: [
+      'Rol bazlı yetkilendirme ile müşteri ve berber akışlarını ayırır',
+      'Hizmet yönetimi ve randevu onay/iptal durumlarını kapsar',
+      'JWT tabanlı authentication ile güvenli oturum yönetimi',
+    ],
+    accent: 'blue',
   },
   {
     name: 'Node.js Blog Sistemi',
+    category: 'Node.js / Backend',
     description: 'Node.js core modülleriyle geliştirilen, daha sonra Express.js yapısına taşınan temel blog sistemi.',
     stack: ['Node.js', 'Express.js', 'File System', 'Events', 'REST'],
     liveUrl: '#',
     githubUrl: 'https://github.com/EnessCansever/basit-blog-sistemi',
-    previewLabel: 'Node.js / Backend',
-    previewText: 'Routing, dosya işlemleri, event sistemi ve temel backend mantığını öğrenmek için geliştirilmiş blog uygulaması.',
-    accent: 'blue',
+    features: [
+      'Routing ve dosya tabanlı veri yönetimini sıfırdan Node.js core ile kurar',
+      'Event sistemi ile temel backend mantığını uygular',
+      'Daha sonra Express.js yapısına taşınarak REST prensipleriyle güçlendirilir',
+    ],
+    accent: 'slate',
   },
 ]
 
@@ -102,7 +135,7 @@ export const experienceItems: ExperienceItem[] = [
   {
     period: '2024 - 2026',
     title: 'Kişisel Projeler ve Full-Stack Gelişim',
-    description: 'React, Node.js, Express ve MongoDB ile gerçek proje akışlarını deneyerek frontend dışındaki backend tarafını da güçlendirdiğim süreç.',
+    description: 'React, Node.js, Express ve MongoDB ile gerçek ürün akışları kurarak full-stack yetkinliğimi üretim seviyesine taşıdığım süreç. Fixora ve JobFit TR gibi projelerde uçtan uca geliştirme, deploy ve bakım sorumluluğunu üstlendim.',
   },
 ]
 
