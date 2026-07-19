@@ -1,62 +1,69 @@
-import { heroStats } from '../data/portfolio'
+import { FiArrowUpRight, FiDownload, FiGithub, FiLinkedin } from 'react-icons/fi'
+
+import { contactItems } from '../data/portfolio'
 
 export function Hero() {
+  const githubHref = contactItems.find((item) => item.label === 'GitHub')?.href ?? '#'
+  const linkedinHref = contactItems.find((item) => item.label === 'LinkedIn')?.href ?? '#'
+
   return (
     <section id="hero" className="scroll-mt-24">
-      <div className="border-b border-slate-800/70 py-12 sm:py-16 lg:py-20">
-        <div className="grid gap-10 lg:grid-cols-[minmax(0,1.35fr)_minmax(280px,0.65fr)] lg:items-end">
-          <div>
-            <p className="text-xs font-semibold uppercase tracking-[0.45em] text-cyan-300">
-              Frontend Developer / Full-Stack Developer Adayı
-            </p>
+      <div className="py-14 sm:py-20 lg:py-24">
+        <p className="text-xs font-semibold uppercase tracking-[0.45em] text-indigo-600">
+          Frontend Developer / Full-Stack Developer Adayı
+        </p>
 
-            <h1 className="mt-6 text-[clamp(3rem,13vw,8.6rem)] font-semibold leading-[0.9] tracking-[-0.08em] text-[#f5f7fb]">
-              <span className="block">ENES</span>
-              <span className="block bg-gradient-to-r from-cyan-300 via-cyan-200 to-violet-300 bg-clip-text text-transparent">
-                CANSEVER
-              </span>
-            </h1>
+        <h1 className="mt-5 text-[clamp(2.25rem,5vw,3.75rem)] font-semibold leading-[1.05] tracking-[-0.03em] text-slate-900">
+          Enes Cansever
+        </h1>
 
-            <p className="mt-6 max-w-xl text-base leading-8 text-slate-400 sm:text-lg">
-              React, Tailwind CSS ve Node.js ile modern, sade ve kullanıcı odaklı web uygulamaları geliştiriyorum.
-            </p>
+        <p className="mt-4 max-w-2xl text-xl font-medium leading-relaxed text-slate-800 sm:text-2xl">
+          React ve TypeScript ile modern web uygulamaları geliştiriyorum.
+        </p>
 
-            <div className="mt-10 flex flex-wrap gap-3 sm:gap-4">
-              {[
-                { label: 'Projeler', href: '#projects' },
-                { label: 'Yetkinlikler', href: '#skills' },
-                { label: 'Deneyim', href: '#experience' },
-                { label: 'İletişim', href: '#contact' },
-              ].map((link) => (
-                <a
-                  key={link.href}
-                  href={link.href}
-                  className="group inline-flex items-center gap-3 text-sm font-medium text-slate-200 transition duration-300 hover:translate-x-0.5 hover:text-cyan-300 focus-visible:translate-x-0.5 focus-visible:text-cyan-300"
-                >
-                  <span>{link.label}</span>
-                  <span className="h-px w-8 bg-slate-700 transition-all duration-300 group-hover:w-14 group-hover:bg-cyan-300" />
-                </a>
-              ))}
-            </div>
-          </div>
+        <p className="mt-5 max-w-2xl text-base leading-7 text-slate-600 sm:text-lg">
+          Frontend eğitmenliği deneyimimi, gerçek projeler ve full-stack geliştirme pratiğiyle
+          birleştiriyorum. Kullanıcı odaklı, sade ve canlıya alınabilir web uygulamaları üretmeye
+          odaklanıyorum.
+        </p>
 
-          <div className="max-w-xs justify-self-start lg:justify-self-end">
-            <div className="border border-slate-800/80 bg-[#070b1a]/65 p-5 backdrop-blur-sm sm:p-6">
-              <p className="text-xs font-semibold uppercase tracking-[0.45em] text-slate-500">
-                Mini manifesto
-              </p>
-              <ul className="mt-5 space-y-4 text-sm leading-7 text-slate-400">
-                {heroStats.map((stat) => (
-                  <li key={stat.label} className="group border-l border-slate-800 pl-4 transition-colors duration-300 hover:border-cyan-300/80">
-                    <span className="block text-slate-200 transition-colors duration-300 group-hover:text-cyan-300">
-                      {stat.value}
-                    </span>
-                    <span className="block">{stat.label}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
+        <div className="mt-9 flex flex-wrap items-center gap-3 sm:gap-4">
+          <a
+            href="#projects"
+            className="inline-flex items-center gap-2 rounded-full bg-indigo-600 px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition duration-300 hover:-translate-y-px hover:bg-indigo-700 hover:shadow-md focus-visible:bg-indigo-700"
+          >
+            Projeleri Gör
+            <FiArrowUpRight className="h-4 w-4" aria-hidden="true" />
+          </a>
+
+          <a
+            href={githubHref}
+            target="_blank"
+            rel="noreferrer"
+            className="inline-flex items-center gap-2 rounded-full border border-slate-300 bg-white px-5 py-2.5 text-sm font-medium text-slate-700 transition duration-300 hover:-translate-y-px hover:border-indigo-300 hover:text-indigo-600"
+          >
+            <FiGithub className="h-4 w-4" aria-hidden="true" />
+            GitHub
+          </a>
+
+          <a
+            href={linkedinHref}
+            target="_blank"
+            rel="noreferrer"
+            className="inline-flex items-center gap-2 rounded-full border border-slate-300 bg-white px-5 py-2.5 text-sm font-medium text-slate-700 transition duration-300 hover:-translate-y-px hover:border-indigo-300 hover:text-indigo-600"
+          >
+            <FiLinkedin className="h-4 w-4" aria-hidden="true" />
+            LinkedIn
+          </a>
+
+          <a
+            href="/cv.pdf"
+            download
+            className="inline-flex items-center gap-2 rounded-full border border-slate-300 bg-white px-5 py-2.5 text-sm font-medium text-slate-700 transition duration-300 hover:-translate-y-px hover:border-indigo-300 hover:text-indigo-600"
+          >
+            <FiDownload className="h-4 w-4" aria-hidden="true" />
+            CV İndir
+          </a>
         </div>
       </div>
     </section>

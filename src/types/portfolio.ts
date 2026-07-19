@@ -20,14 +20,15 @@ export type SkillGroup = {
 
 export type ProjectItem = {
   name: string
+  category: string
   description: string
   stack: string[]
   liveUrl: string
   githubUrl: string
   images?: string[]
-  previewLabel: string
-  previewText: string
-  accent: 'cyan' | 'violet' | 'blue'
+  features: string[]
+  accent: 'indigo' | 'violet' | 'blue' | 'slate'
+  featured?: boolean
 }
 
 export type ExperienceItem = {

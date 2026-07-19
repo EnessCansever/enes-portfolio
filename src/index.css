@@ -16,11 +16,11 @@
   }
 
   body {
-    @apply relative min-h-screen bg-slate-950 font-sans text-slate-100 antialiased;
+    @apply relative min-h-screen bg-white font-sans text-slate-700 antialiased;
     background-image:
-      radial-gradient(circle at top left, rgba(34, 211, 238, 0.16), transparent 32%),
-      radial-gradient(circle at 82% 18%, rgba(139, 92, 246, 0.08), transparent 28%),
-      linear-gradient(180deg, #050816 0%, #070b1a 46%, #050816 100%);
+      radial-gradient(circle at top left, rgba(99, 102, 241, 0.07), transparent 34%),
+      radial-gradient(circle at 84% 14%, rgba(79, 70, 229, 0.05), transparent 30%),
+      linear-gradient(180deg, #ffffff 0%, #f8fafc 50%, #ffffff 100%);
     background-attachment: scroll;
     font-synthesis: none;
     text-rendering: optimizeLegibility;
@@ -35,11 +35,11 @@
     inset: 0;
     pointer-events: none;
     background-image:
-      linear-gradient(rgba(255, 255, 255, 0.015) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(255, 255, 255, 0.015) 1px, transparent 1px);
+      linear-gradient(rgba(15, 23, 42, 0.025) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(15, 23, 42, 0.025) 1px, transparent 1px);
     background-size: 72px 72px;
-    mask-image: radial-gradient(circle at center, black 30%, transparent 100%);
-    opacity: 0.38;
+    mask-image: radial-gradient(circle at center, black 22%, transparent 85%);
+    opacity: 0.5;
     z-index: -2;
   }
 
@@ -49,10 +49,10 @@
     inset: -20%;
     pointer-events: none;
     background:
-      radial-gradient(circle at 24% 20%, rgba(34, 211, 238, 0.08), transparent 22%),
-      radial-gradient(circle at 78% 26%, rgba(139, 92, 246, 0.08), transparent 24%),
-      radial-gradient(circle at 50% 85%, rgba(34, 211, 238, 0.04), transparent 28%);
-    filter: blur(24px);
+      radial-gradient(circle at 22% 18%, rgba(99, 102, 241, 0.05), transparent 24%),
+      radial-gradient(circle at 80% 24%, rgba(79, 70, 229, 0.04), transparent 26%),
+      radial-gradient(circle at 50% 88%, rgba(99, 102, 241, 0.03), transparent 30%);
+    filter: blur(32px);
     z-index: -3;
   }
 
@@ -67,13 +67,13 @@
   }
 
   ::selection {
-    background: rgba(34, 211, 238, 0.24);
-    color: #ecfeff;
+    background: rgba(99, 102, 241, 0.16);
+    color: #1e1b4b;
   }
 
   a:focus-visible,
   button:focus-visible {
-    outline: 2px solid rgba(34, 211, 238, 0.8);
+    outline: 2px solid rgba(79, 70, 229, 0.65);
     outline-offset: 3px;
   }
 }
@@ -85,7 +85,7 @@
   }
 
   50% {
-    transform: translate3d(18px, -14px, 0) scale(1.04);
+    transform: translate3d(10px, -8px, 0) scale(1.02);
   }
 }
 
@@ -96,27 +96,27 @@
   }
 
   50% {
-    transform: translate3d(-16px, 18px, 0) scale(1.03);
+    transform: translate3d(-9px, 10px, 0) scale(1.015);
   }
 }
 
 @layer utilities {
   .orb {
-    animation: drift-slow 22s ease-in-out infinite;
+    animation: drift-slow 26s ease-in-out infinite;
     will-change: transform;
   }
 
-  .orb-cyan {
-    animation-duration: 24s;
+  .orb-indigo {
+    animation-duration: 28s;
   }
 
   .orb-violet {
-    animation-duration: 28s;
+    animation-duration: 32s;
     animation-name: drift-slower;
   }
 
   .orb-blue {
-    animation-duration: 30s;
+    animation-duration: 34s;
     animation-direction: alternate;
   }
 }

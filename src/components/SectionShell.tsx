@@ -1,7 +1,6 @@
 import type { ReactNode } from 'react'
 
 type SectionShellProps = {
-  number: string
   id: string
   eyebrow: string
   title: string
@@ -11,7 +10,6 @@ type SectionShellProps = {
 }
 
 export function SectionShell({
-  number,
   id,
   eyebrow,
   title,
@@ -20,23 +18,17 @@ export function SectionShell({
   className = '',
 }: SectionShellProps) {
   return (
-    <section id={id} className={`group scroll-mt-24 ${className}`}>
-      <div className="border-t border-slate-800/65 py-10 sm:py-12 lg:py-14">
-        <div className="max-w-3xl">
-          <div className="flex items-center gap-3 text-sm text-slate-400">
-            <span className="text-xs font-semibold uppercase tracking-[0.45em] text-cyan-300/90">
-              {number}
-            </span>
-            <span className="h-px w-8 bg-slate-700 transition-all duration-300 group-hover:w-14 group-hover:bg-cyan-300" />
-            <span>{eyebrow}</span>
-          </div>
-          <h2 className="mt-4 text-[clamp(1.9rem,4vw,3.35rem)] font-semibold tracking-[-0.05em] text-[#f5f7fb]">
-            {title}
-          </h2>
-          <p className="mt-4 max-w-2xl text-sm leading-7 text-slate-400 sm:text-base">{description}</p>
-        </div>
-        <div className="mt-8">{children}</div>
+    <section id={id} className={`scroll-mt-28 py-12 sm:scroll-mt-32 sm:py-16 lg:py-20 ${className}`}>
+      <div className="max-w-2xl">
+        <span className="inline-flex items-center rounded-full bg-indigo-50 px-3 py-1 text-xs font-semibold uppercase tracking-[0.14em] text-indigo-600">
+          {eyebrow}
+        </span>
+        <h2 className="mt-4 text-[clamp(1.75rem,3.2vw,2.65rem)] font-semibold tracking-tight text-slate-900">
+          {title}
+        </h2>
+        <p className="mt-3 text-base leading-7 text-slate-600">{description}</p>
       </div>
+      <div className="mt-10">{children}</div>
     </section>
   )
 }
