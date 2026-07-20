@@ -10,6 +10,11 @@ const iconByLabel: Record<string, IconType> = {
   GitHub: FiGithub,
 }
 
+const displayTextByLabel: Record<string, string> = {
+  LinkedIn: 'LinkedIn profilimi görüntüle',
+  GitHub: 'GitHub profilimi görüntüle',
+}
+
 export function Contact() {
   return (
     <SectionShell
@@ -35,7 +40,9 @@ export function Contact() {
               </span>
               <div>
                 <p className="text-xs font-semibold uppercase tracking-wide text-slate-400">{item.label}</p>
-                <p className="mt-1 text-sm font-medium text-slate-900">{item.value}</p>
+                <p className="mt-1 text-sm font-medium text-slate-900">
+                  {displayTextByLabel[item.label] ?? item.value}
+                </p>
               </div>
             </a>
           )
@@ -51,7 +58,7 @@ export function Contact() {
           </span>
           <div>
             <p className="text-xs font-semibold uppercase tracking-wide text-slate-400">CV</p>
-            <p className="mt-1 text-sm font-medium text-slate-900">PDF olarak indir</p>
+            <p className="mt-1 text-sm font-medium text-slate-900">CV’mi PDF olarak indir</p>
           </div>
         </a>
       </div>

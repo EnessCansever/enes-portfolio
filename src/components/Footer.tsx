@@ -9,7 +9,7 @@ export function Footer() {
   return (
     <footer className="app-container pb-10 pt-6 sm:pb-12">
       <div className="flex flex-col gap-4 border-t border-slate-100 pt-6 text-sm text-slate-500 sm:flex-row sm:items-center sm:justify-between">
-        <p>© 2026 Enes Cansever. Kullanıcı odaklı web arayüzleri ve full-stack projeler.</p>
+        <p>© 2026 Enes Cansever · React, TypeScript ve Node.js ile sade, kullanıcı odaklı web uygulamaları geliştiriyorum.</p>
         <div className="flex items-center gap-5">
           <a
             href={githubHref}
