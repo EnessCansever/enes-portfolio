@@ -10,7 +10,7 @@ export function Hero() {
     <section id="hero" className="scroll-mt-24">
       <div className="py-14 sm:py-20 lg:py-24">
         <p className="text-xs font-semibold uppercase tracking-[0.45em] text-indigo-600">
-          Frontend Developer / Full-Stack Developer Adayı
+          Frontend Developer / Full-Stack Developer
         </p>
 
         <h1 className="mt-5 text-[clamp(2.25rem,5vw,3.75rem)] font-semibold leading-[1.05] tracking-[-0.03em] text-slate-900">
